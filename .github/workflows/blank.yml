@@ -7,6 +7,6 @@ jobs:
     environment: production
     steps:
       - name: deploy
-        run: |
-          echo "Deploying to production"
-          
+        run: echo "Deploying to production" && sleep 60s && echo "Deployment completed"
+        shell: bash
+
